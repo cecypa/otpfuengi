@@ -1,0 +1,672 @@
+body{
+      background-color: rgb(240, 246, 250);
+    color: #1d0897 !important;
+}
+
+/*nav bar*/
+.navbar-brand{
+    color: #2629e7 !important;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.navbar .nav-link{
+    color: rgb(38, 41, 231) !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    font-size: 1.2rem !important;
+    font-family: "chivo";
+}
+
+.navbar .nav-link:hover{
+
+    background-color:  rgb(229, 239, 245);
+  border-radius: 40%;
+  font-weight: bold;
+  }
+
+  /* fin nav bar*/
+
+  /*INDEX*/
+
+  /*Section fondo*/
+
+#home {
+    background-image: url(assets/img/arcoiris.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    
+   
+  }
+  
+  @media (max-width: 1024px) {
+    .bg-image {
+      background-attachment: scroll;
+    }
+  }
+  section{
+    margin-top: 4rem;
+    /* height: 100vh; */
+    width: 100vw;
+  
+  }
+
+  .intro {
+    height: 100vh;
+    width: 100vw;
+   justify-content: center;
+   
+  }
+
+  
+  h1{
+    font-size: 4rem;
+    text-align: center;
+    color:  rgb((38, 41, 231));
+    padding-top: 6.5rem;
+    font-family:'Times New Roman', Times, serif; 
+    padding-bottom: 2rem;
+    font-weight: 400;
+
+  }
+
+  h1 span{
+    font-weight: bold;
+  }
+
+
+  h2{
+    text-align: center;
+    color:rgb(80, 83, 245);
+    font-size: 2rem;
+  }
+
+  #slogann h2{
+    font-style: italic ;
+    font-size: 1.8rem;
+  }
+
+
+  h3{
+    font-size:  1.5rem;
+    text-align: center;
+        color: rgb(255, 255, 255);
+    position: relative; 
+        font-family:"Alice";
+
+  }
+  
+  /*Animacion osteopatia*/
+
+    .contenedor {
+
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 40px;
+    color: rgb(247, 250, 252);
+    font-size: 2rem;
+    line-height: 40px;
+    float:center;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    
+  }
+  
+  .contenedor ul {
+    list-style: none;
+    padding-left: 10px;
+    animation: cambiar 7s infinite;
+    
+  }
+  
+  ul, p {
+    text-align: center;
+    font-family: "ubuntu";
+    
+  }
+  
+  @keyframes cambiar {
+    
+    0%{ margin-top: 0;
+      }
+    20%{ margin-top: 0;
+      }
+    
+    25% {margin-top: -40px;
+      }
+    50% {margin-top: -40px;
+     }
+    
+    55% {margin-top: -80px;
+      }
+    80% {margin-top: -80px;
+     }
+    
+    85% {margin-top: -40px;
+      }
+    95% {margin-top: -40px;
+      }
+    
+    100% {margin-top: 0;
+    }
+  }
+
+  /*fin animacion otp*/
+
+  
+
+/*slider SLOGAN*/
+
+
+#slider{
+  min-height: 80px;
+	margin: auto;
+	overflow: hidden;
+	padding: 5px;
+	position: relative;
+	width: 600px;
+
+}
+
+@media (max-width: 600px) {
+ #slider {
+    width: 100vw;
+  }
+}
+
+
+@media (max-width: 600px) {
+  #slider ul li{
+         padding: 0;
+     margin-left: -55px;
+     font-style: italic;
+   } 
+ }
+
+  @media(max-width: 600px){
+    #slider ul li .slider-container span {
+      color: rgb(213, 247, 255);
+      display: inline-block;
+           font-weight: 800;
+      text-align: left;
+      
+    }
+
+  }
+
+#slider ul {
+    list-style: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 9000px;
+    transition: left .2s linear;
+    -moz-transition: left .2s linear;
+    -o-transition: left .2s linear;
+    -webkit-transition: left .2s linear;
+    margin-left: -25px;
+    
+  } 
+    
+  #slider ul li {
+      font-family: 'Ephesis';
+      float: left;
+      position: relative;
+      width: 600px;
+      height: 200px;
+           
+    }
+  
+/* Content */
+.slider-container
+{
+  color: rgb(38, 41, 231);
+  font-size: 1.8rem;  
+  font-weight: 900;
+  line-height: 1.1;
+  margin: 0 auto;
+  max-width: 550px;
+  min-height: 180px;
+  padding: 0;
+  text-align:center;
+  font-family: "ubuntu";
+}
+
+.slider-container span {
+    color: rgba(4,56,106,.70);
+    display: inline-block;
+    font-size: 70%;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+/*** target hooks ****/
+
+@keyframes slide-animation {
+	0% {opacity:0;}
+	2% {opacity:1;}
+	20% {left:-50px; opacity:1;}
+	22.5% {opacity:0.6;}
+	25% {left:-600px; opacity:1;}
+	45% {left:-600px; opacity:1;}
+	47.5% {opacity:0.6;}
+	50% {left:-1200px; opacity:1;}
+	70% {left:-1200px; opacity:1;}
+	72.5% {opacity:0.6;}
+	75% {left:-1800px; opacity:1;}
+	95% {opacity:1;}
+	98% {left:-1800px; opacity:0;} 
+	100% {left:0px; opacity:0;}
+}
+
+#slider ul
+{
+	-webkit-animation: slide-animation 20s infinite;
+}
+
+#slider ul:hover
+{
+	-moz-animation-play-state: paused;
+	-webkit-animation-play-state: paused;
+}
+/*fIN SLIDER SLOGAN*/
+
+/*CTA*/
+
+#loguito{
+  text-align: center;
+}
+#loguito img{
+  width: 8%;
+  display: inline-block;
+  margin:auto
+  
+}
+#loguito a {
+  display: inline-block;
+  margin: auto;
+  font-family: "sansita";
+  text-decoration: none;
+  color: rgb(23, 21, 189) ;
+  font-size: 1.2rem;
+  }
+
+  #loguito a:hover {
+    
+    text-transform: uppercase;
+   
+    }
+  
+
+/*FOOTER*/
+footer{
+  background-color: rgb(130, 193, 245);
+}
+  #foot{
+   
+      background-image: url(assets/img/fondo.jpg);
+      background-repeat: no-repeat;
+      background-attachment: local;
+      background-size: cover;
+      background-position: center center;
+           opacity: 0.8;
+      width: 100%;
+    display: grid;
+    grid-auto-columns: 2fr 1fr 1fr;
+   grid-auto-rows: 200px;
+         
+  }
+
+  .contacto{
+    grid-column: 1 / 2;
+    color: rgb(23, 21, 189);
+    padding-top: 2rem;
+   
+
+  }
+
+  .pagina{
+    grid-column: 2 / 3;
+    color: rgb(23, 21, 189);
+    padding-top: 2rem;
+    
+  }
+
+  .logo{
+
+    grid-column: 3/ 4;
+    color: rgb(23, 21, 189);
+    padding-top: 2rem;
+  }
+
+
+h4{
+
+  font-size: 1.3rem;
+  text-align: center;
+  color: rgb(23, 21, 189);
+}
+
+
+h5{
+
+  font-size: 1.3rem;
+  text-align: center;
+  font-family: "dancing script";
+  color: rgb(23, 21, 189);
+}
+
+#ubicacion {
+text-align: center;
+padding: 1rem;
+color: rgb(23, 21, 189);
+
+}
+
+.redes li {
+  text-decoration: none;
+  list-style: none;
+  display: inline;
+  color:rgb(23, 21, 189);
+  
+}
+
+.contacto .redes ul li a{
+  display: inline-block;
+  font-size: 1.5rem;
+ padding: 0.5rem;
+ color: rgb(23, 21, 189);
+  
+}
+
+.contacto .redes ul li a:hover{
+  background-color: rgb(229, 239, 245);
+  border-radius: 50%;
+}
+
+
+.pagina ul li {
+
+  list-style: none;
+  text-align: left;
+  padding-top: 0.5rem;
+  
+}
+
+.pagina ul li a {
+  color: rgb(29, 8, 151);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;   
+}
+
+.pagina ul li a:hover{
+  background-color: rgb(229, 239, 245);
+  border-radius: 40%;
+  padding: 1rem;
+  font-weight: bold;
+
+}
+/* 
+.logo img{
+
+  width: 30%;
+  height: 30%;
+  position:relative;
+  float: center;
+   
+} */
+
+#copyright{
+
+  width: 100%;
+  text-align: center;
+   padding: 1rem;
+ color: rgb(11, 21, 114);
+}
+
+#copyright a{
+  text-decoration: none;
+}
+
+/*logo wp*/
+.whatsapp {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:rgb(125, 224, 248);
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+
+.whatsapp-icon {
+  margin-top:13px;
+}
+
+/*FIN FOOTER*/
+
+/*servicios*/
+
+.col{
+margin-top: 3rem;
+
+}
+
+
+/*curriculum*/
+.cv{
+  width: 90%;
+  height: 100%;
+  margin-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  border: 6px;
+  border-color:  rgb(83, 99, 241);
+  border-style: inset;  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+
+}
+
+.foto{
+  grid-column: 1/2;
+
+}
+
+.foto img{
+  width: 60%;
+ display: block;
+ margin: auto;
+ border-radius: 45%;
+ padding: 1rem ;
+ 
+}
+
+.foto p{
+  font-size: 0.9 rem;
+  font-family: "ubuntu";
+  line-height: 2rem;
+  padding: 1rem;
+}
+
+.cursos{
+  grid-column: 2/3;
+  margin: auto;
+   
+}
+
+.cursos h4{
+  font-size: 3rem;
+  font-family: "ubuntu";
+}
+
+.cursos ul li{
+  list-style: none ;
+  line-height: 3rem;
+font-family: "ubuntu";
+font-size: 1.2rem;
+}
+
+
+@media (max-width: 600px) {
+  .cv {
+    grid-template-columns: 100%;
+    width: 90%;
+    
+  }
+  .cursos{
+
+    grid-column: 1/2;
+    text-align: center ; }
+}
+
+/*testimonios*/
+
+#testimonios{
+  width: 85%;
+ margin: auto;
+}
+
+#testimonios .card .card-body p{
+
+  margin: auto;
+  text-align: center;
+  
+}
+
+/*contacto*/
+
+#contact{
+  padding-left:1rem;
+  width: 90%;
+display: grid;
+grid-auto-columns: 1fr 1fr;
+grid-auto-rows: auto;
+
+}
+
+#contactame{
+  padding-top: 1rem;
+}
+
+
+.red{
+  grid-column: 1/2;
+  }
+
+.red h4{
+  line-height: 2rem;
+  font-family: "chivo";
+  }
+
+.red li {
+ 
+  list-style: none;
+  display: inline;
+  
+}
+
+.red ul li a{
+  display: inline-block;
+  font-size: 3rem;
+ padding: 2rem;
+ color: rgb(29, 8, 151);
+  
+}
+
+.red ul li a:hover{
+  background-color: rgb(198, 230, 255);
+  border-radius: 50%;
+  padding: 1rem;
+
+}
+
+#formulario{
+  grid-column: 2/3;
+  width: 95%;
+  border-style:inset;
+  border-color:  rgb(83, 99, 241);
+   text-align: left;
+ padding: 2rem;
+ }
+
+  #nombre, #email, #txt .consulta{
+   width: 100%;
+   margin: auto;
+ }
+
+
+ #botones .enviar, .cancelar{
+   background-color: rgb(198, 230, 255);
+  width: 100px;
+   font-size: 1rem;
+   border-radius: 20%;
+  
+ }
+
+
+ #botones .enviar:hover{
+  background-color: rgb(230, 235, 240);
+ font-style: italic;
+ }
+
+ #botones .cancelar:hover{
+  background-color:rgb(230, 235, 240);
+  font-style: italic;
+ }
+
+ @media (max-width: 600px) {
+  #contact {
+    grid-template-columns: 100%;
+    width: 90%;
+    
+  }
+  #formulario{
+
+    grid-column: 1/2;
+    margin: auto ; }
+} 
+#mapa iframe{
+  
+  display: block;
+  margin: auto;
+
+}
+
+/*preguntas frecuentes*/
+
+#accordionFlushExample{
+width: 90%;
+margin: auto;
+color: rgb(38, 41, 231);
+
+}
+
+#accordionFlushExample h2 button{
+color: rgb(29, 8, 151);
+background-color:  rgb(248, 254, 255);
+font-size: 1.5rem;
+font-family: "chivo";
+
+}
+
+.accordion-body{
+  background-color:  rgb(237, 244, 248) ;
+  font-size: 1.2rem;
+  font-family: "chivo";
+}
